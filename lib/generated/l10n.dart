@@ -1079,6 +1079,106 @@ class S {
       args: [],
     );
   }
+
+  /// `Abilities Course`
+  String get abilitiesCourse {
+    return Intl.message(
+      'Abilities Course',
+      name: 'abilitiesCourse',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Details`
+  String get details {
+    return Intl.message(
+      'Details',
+      name: 'details',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Days`
+  String get days {
+    return Intl.message(
+      'Days',
+      name: 'days',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Tests`
+  String get tests {
+    return Intl.message(
+      'Tests',
+      name: 'tests',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Allowed Devices`
+  String get allowedDevices {
+    return Intl.message(
+      'Allowed Devices',
+      name: 'allowedDevices',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Mobile phone`
+  String get mobilePhone {
+    return Intl.message(
+      'Mobile phone',
+      name: 'mobilePhone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `entrance`
+  String get entrance {
+    return Intl.message(
+      'entrance',
+      name: 'entrance',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Close`
+  String get close {
+    return Intl.message(
+      'Close',
+      name: 'close',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The Lesson`
+  String get theLesson {
+    return Intl.message(
+      'The Lesson',
+      name: 'theLesson',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Theoretical`
+  String get theoretical {
+    return Intl.message(
+      'Theoretical',
+      name: 'theoretical',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

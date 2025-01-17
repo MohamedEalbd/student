@@ -7,6 +7,7 @@ import 'package:student/features/auth/screens/login_or_signup.dart';
 import 'package:student/features/auth/screens/login_screen.dart';
 import 'package:student/features/auth/screens/sign_up_screen.dart';
 import 'package:student/features/cart/screens/cart_screen.dart';
+import 'package:student/features/courses/screens/abilities_course_screen.dart';
 import 'package:student/features/dashboaed/screens/dashboard_screen.dart';
 import 'package:student/features/home/screens/home_screen.dart';
 import 'package:student/features/onboard/screens/onboard_screen.dart';
@@ -46,8 +47,8 @@ class RoutesGenerator {
       //   } else {
       //     return _buildRoute(const UndefinedWidget(), isIos);
       //   }
-      // case Routes.statisticsScreen:
-      //   return _buildRoute(const StatisticsScreen(), isIos);
+      case Routes.abilitiesCourse:
+        return _buildRoute(const AbilitiesCourseScreen(), isIos);
       // case Routes.contentCourseScreen:
       //   return _buildRoute(const ContentCourseScreen(), isIos);
       // case Routes.editProfile:

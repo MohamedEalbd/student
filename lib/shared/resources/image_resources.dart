@@ -16,4 +16,5 @@ class ImageResources {
   static const addPic = "$_Image_Path/add_pic.png";
   static const laptop = "$_Image_Path/laptop.jpeg";
   static const tahsily = "$_Image_Path/tahsily.jpeg";
+  static const liveCourse = "$_Image_Path/live_course.png";
 }

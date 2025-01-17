@@ -18,5 +18,6 @@ Future<void> appInjections() async {
   cartInjections();
   lecturersInjections();
   profileInjections();
-  coursesInjections(); // addCourseInjections();
+  coursesInjections();
+  
 }

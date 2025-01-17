@@ -14,4 +14,5 @@ class Routes {
   static const statisticsScreen = "statisticsScreen";
   static const contentCourseScreen = "contentCourseScreen";
   static const cart = "cart";
+  static const abilitiesCourse = "abilitiesCourse";
 }

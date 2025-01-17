@@ -18,10 +18,9 @@ class TitleAppBar extends StatelessWidget {
     return Text(
       title,
       style: AppTextStyle.textStyle(
-        //isPlusJakartaSans: isProfile ? true : false,
         appFontSize: 20.sp,
-        color: ColorResources.primaryColor,
-        // isProfile ? ColorResources.whiteColor : ColorResources.primaryColor,
+        color:
+            isProfile ? ColorResources.whiteColor : ColorResources.primaryColor,
         appFontWeight: FontWeight.w600,
         appFontHeight: 24.2.sp,
       ),

@@ -25,14 +25,18 @@ class MessageLookup extends MessageLookupByLibrary {
         "aMathTeacherWithMoreThanTenYearsOfExperience":
             MessageLookupByLibrary.simpleMessage(
                 "مدرس رياضيات لديه خبرة اكثر من عشر سنوات وقام بتدريس اكثر من 5000 طالب على مدارعشر سنوات لدية خبرة في تدريس القدرات لي اكثر من خمس سنوات"),
+        "abilitiesCourse": MessageLookupByLibrary.simpleMessage("كورس القدرات"),
         "aboutTheTeacher": MessageLookupByLibrary.simpleMessage("عن المدرس"),
         "achievement": MessageLookupByLibrary.simpleMessage("التحصيلي"),
         "addNewCourse":
             MessageLookupByLibrary.simpleMessage("اضافة دورة جديدة"),
+        "allowedDevices":
+            MessageLookupByLibrary.simpleMessage("الاجهزه المسموح بها"),
         "answers": MessageLookupByLibrary.simpleMessage("الاجابات"),
         "books": MessageLookupByLibrary.simpleMessage("الكورسات"),
         "capabilities": MessageLookupByLibrary.simpleMessage("القدرات"),
         "cart": MessageLookupByLibrary.simpleMessage("السلة"),
+        "close": MessageLookupByLibrary.simpleMessage("اغلاق"),
         "complete": MessageLookupByLibrary.simpleMessage("اكتمل"),
         "completeTheSubscriptionProcess":
             MessageLookupByLibrary.simpleMessage("اتمام عملية الاشتراك"),
@@ -46,8 +50,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "course": MessageLookupByLibrary.simpleMessage(" كورس"),
         "courses": MessageLookupByLibrary.simpleMessage("الكورسات"),
         "createAccount": MessageLookupByLibrary.simpleMessage("انشاء حساب"),
+        "days": MessageLookupByLibrary.simpleMessage("الايام"),
         "degrees": MessageLookupByLibrary.simpleMessage("الدرجات"),
         "description": MessageLookupByLibrary.simpleMessage("الوصف"),
+        "details": MessageLookupByLibrary.simpleMessage("التفاصيل"),
         "devicesUsed":
             MessageLookupByLibrary.simpleMessage("الاجهزه المستخدمة"),
         "duration": MessageLookupByLibrary.simpleMessage("المدة"),
@@ -71,6 +77,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "enterToday": MessageLookupByLibrary.simpleMessage("ادخل اليوم"),
         "enterYourCourse": MessageLookupByLibrary.simpleMessage(
             "قم بادخال الدورة التعليميه الخاصة بك لتعرض على منصة وهح التي تحتوي على اكثر من 10000 طالب من جميع انحاء المملكه العربية السعودية"),
+        "entrance": MessageLookupByLibrary.simpleMessage("دخول"),
         "evaluations": MessageLookupByLibrary.simpleMessage("التقيمات"),
         "female": MessageLookupByLibrary.simpleMessage("أنثى"),
         "forgetPassword":
@@ -92,6 +99,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "male": MessageLookupByLibrary.simpleMessage("ذكر"),
         "materials": MessageLookupByLibrary.simpleMessage("المواد"),
+        "mobilePhone": MessageLookupByLibrary.simpleMessage("الهاتف المحمول"),
         "next": MessageLookupByLibrary.simpleMessage("التالي"),
         "numberOfCourses": MessageLookupByLibrary.simpleMessage("عدد الكورسات"),
         "numberOfCoursesSold":
@@ -130,13 +138,16 @@ class MessageLookup extends MessageLookupByLibrary {
         "teacher": MessageLookupByLibrary.simpleMessage("مدرس"),
         "test": MessageLookupByLibrary.simpleMessage("الاختبار"),
         "testDuration": MessageLookupByLibrary.simpleMessage("مدة الاختبار"),
+        "tests": MessageLookupByLibrary.simpleMessage("الاختبارات"),
         "theAppointment": MessageLookupByLibrary.simpleMessage("الموعد"),
         "theLectures": MessageLookupByLibrary.simpleMessage("المحاضرات"),
+        "theLesson": MessageLookupByLibrary.simpleMessage("الدرس"),
         "theLine": MessageLookupByLibrary.simpleMessage("الصف"),
         "theLogin": MessageLookupByLibrary.simpleMessage("التسجيل"),
         "thePrevious": MessageLookupByLibrary.simpleMessage("السابق"),
         "theStudent": MessageLookupByLibrary.simpleMessage("الطالب"),
         "theStudents": MessageLookupByLibrary.simpleMessage("الطلاب"),
+        "theoretical": MessageLookupByLibrary.simpleMessage("النظري"),
         "thirdSecondary": MessageLookupByLibrary.simpleMessage("ثالث ثانوي"),
         "thursday": MessageLookupByLibrary.simpleMessage("الخميس"),
         "time": MessageLookupByLibrary.simpleMessage("الوقت"),

@@ -88,81 +88,8 @@ class HomeScreen extends StatelessWidget {
               ],
             ),
           ),
-          floatingActionButtonLocation: FloatingActionButtonLocation.startFloat,
-          floatingActionButton: GestureDetector(
-            onTap: () {
-              // showDialog(
-              //     context: context,
-              //     builder: (context) {
-              //       return AddCourseScreen();
-              //     });
-            },
-            child: Container(
-              height: 65.h,
-              width: 200.w,
-              alignment: Alignment.center,
-              padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 16.h),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(50.r),
-                color: ColorResources.greenColor,
-                boxShadow: [
-                  BoxShadow(
-                    color: ColorResources.blackColor.withOpacity(0.3),
-                    blurRadius: 3.0,
-                    spreadRadius: 2.0,
-                    offset: Offset(1, 3),
-                  ),
-                ],
-              ),
-              child: Row(
-                spacing: 8.w,
-                children: [
-                  Icon(
-                    Icons.add,
-                    color: ColorResources.whiteColor,
-                    size: 24,
-                    weight: 24.w,
-                  ),
-                  Text(
-                    tr.addNewCourse,
-                    style: AppTextStyle.textStyle(
-                      appFontSize: 16.sp,
-                      appFontHeight: 19.36.sp,
-                      appFontWeight: FontWeight.w400,
-                      color: ColorResources.whiteColor,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
         );
       },
     );
-  }
-}
-
-// Painter for the curved shape
-class CurvePainter extends CustomPainter {
-  @override
-  void paint(Canvas canvas, Size size) {
-    Paint paint = Paint()
-      ..color = Colors.blue.withOpacity(0.6) // Adjust overlay color
-      ..style = PaintingStyle.fill;
-
-    Path path = Path();
-    path.moveTo(0, size.height * 0.4);
-    path.quadraticBezierTo(
-        size.width * 0.5, size.height * 0.6, size.width, size.height * 0.3);
-    path.lineTo(size.width, size.height);
-    path.lineTo(0, size.height);
-    path.close();
-
-    canvas.drawPath(path, paint);
-  }
-
-  @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) {
-    return false;
   }
 }

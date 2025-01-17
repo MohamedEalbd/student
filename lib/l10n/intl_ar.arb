@@ -98,6 +98,16 @@
     "numberOfCourses":"عدد الكورسات",
     "completeTheSubscriptionProcess":"اتمام عملية الاشتراك",
     "edit":"تعديل",
-    "completedCourses":"الكورسات المكتمله"
+    "completedCourses":"الكورسات المكتمله",
+    "abilitiesCourse":"كورس القدرات",
+    "details":"التفاصيل",
+    "days":"الايام",
+    "tests":"الاختبارات",
+    "allowedDevices":"الاجهزه المسموح بها",
+    "mobilePhone":"الهاتف المحمول",
+    "entrance":"دخول",
+    "close":"اغلاق",
+    "theLesson":"الدرس",
+    "theoretical":"النظري"
 
 }

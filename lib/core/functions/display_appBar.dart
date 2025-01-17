@@ -4,6 +4,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:student/core/functions/check_for_current_language.dart';
 import 'package:student/core/functions/translate.dart';
 import 'package:student/features/profile/widgets/header_card.dart';
+import 'package:student/shared/resources/color_resources.dart';
 import 'package:student/shared/resources/icons_resources.dart';
 import 'package:student/shared/resources/image_resources.dart';
 import 'package:student/shared/widgets/titleAppBar.dart';
@@ -52,7 +53,13 @@ AppBar displayAppBar(int index, Widget leading) {
       );
     case 4:
       return AppBar(
-        //backgroundColor: ColorResources.primaryColor,
+        backgroundColor: ColorResources.primaryColor,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.only(
+            bottomLeft: Radius.circular(50.r),
+            bottomRight: Radius.circular(50.r),
+          ),
+        ),
         leading: leading,
         centerTitle: true,
         elevation: 0,

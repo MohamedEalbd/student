@@ -8,12 +8,12 @@ import 'package:student/features/auth/cubit/auth_cubit.dart';
 import 'package:student/features/cart/cubit/cart_cubit.dart';
 import 'package:student/features/courses/cubit/courses_cubit.dart';
 import 'package:student/features/dashboaed/cubit/dashboard_cubit.dart';
+import 'package:student/features/dashboaed/screens/dashboard_screen.dart';
 import 'package:student/features/home/cubit/home_cubit.dart';
 import 'package:student/features/onboard/cubit/onboard_cubit.dart';
 import 'package:student/features/profile/cubit/profile_cubit.dart';
 import 'package:student/features/splash/cubit/theme_cubit.dart';
 import 'package:student/features/lecturers/cubit/lecturers_cubit.dart';
-import 'package:student/features/splash/screen/splash_screen.dart';
 import 'package:student/generated/l10n.dart';
 
 //! when you want using localization in this app
@@ -47,8 +47,7 @@ class MyApp extends StatelessWidget {
                 create: (context) => getIt<ProfileCubit>()),
             BlocProvider<CoursesCubit>(
                 create: (context) => getIt<CoursesCubit>()),
-            // BlocProvider<AddCourseCubit>(
-            //     create: (context) => getIt<AddCourseCubit>()),
+          
           ],
           child: MaterialApp(
             navigatorKey: navigatorKey,
@@ -66,7 +65,7 @@ class MyApp extends StatelessWidget {
           ),
         );
       },
-      child: SplashScreen(),
+      child: DashboardScreen(),
     );
   }
 }

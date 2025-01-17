@@ -25,16 +25,21 @@ class MessageLookup extends MessageLookupByLibrary {
         "aMathTeacherWithMoreThanTenYearsOfExperience":
             MessageLookupByLibrary.simpleMessage(
                 "A math teacher with more than ten years of experience and has taught more than 5000 students over ten years. He has more than five years of experience in teaching abilities."),
+        "abilitiesCourse":
+            MessageLookupByLibrary.simpleMessage("Abilities Course"),
         "aboutTheTeacher":
             MessageLookupByLibrary.simpleMessage("About the teacher"),
         "achievement": MessageLookupByLibrary.simpleMessage("Achievement"),
         "addNewCourse":
             MessageLookupByLibrary.simpleMessage("Add A New Course"),
+        "allowedDevices":
+            MessageLookupByLibrary.simpleMessage("Allowed Devices"),
         "answers": MessageLookupByLibrary.simpleMessage("Answers"),
         "books": MessageLookupByLibrary.simpleMessage("Books"),
         "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
         "capabilities": MessageLookupByLibrary.simpleMessage("Capabilities"),
         "cart": MessageLookupByLibrary.simpleMessage("Cart"),
+        "close": MessageLookupByLibrary.simpleMessage("Close"),
         "complete": MessageLookupByLibrary.simpleMessage("Complete"),
         "completeTheSubscriptionProcess": MessageLookupByLibrary.simpleMessage(
             "Complete the subscription process"),
@@ -47,8 +52,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "course": MessageLookupByLibrary.simpleMessage("Course"),
         "courses": MessageLookupByLibrary.simpleMessage("Courses"),
         "createAccount": MessageLookupByLibrary.simpleMessage("Create Account"),
+        "days": MessageLookupByLibrary.simpleMessage("Days"),
         "degrees": MessageLookupByLibrary.simpleMessage("Degrees"),
         "description": MessageLookupByLibrary.simpleMessage("Description"),
+        "details": MessageLookupByLibrary.simpleMessage("Details"),
         "devicesUsed": MessageLookupByLibrary.simpleMessage("Devices Used"),
         "duration": MessageLookupByLibrary.simpleMessage("Durations"),
         "edit": MessageLookupByLibrary.simpleMessage("Edit"),
@@ -71,6 +78,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "enterToday": MessageLookupByLibrary.simpleMessage("Enter today"),
         "enterYourCourse": MessageLookupByLibrary.simpleMessage(
             "Enter your course to be displayed on the Wahha platform, which contains more than 10,000 students from all over the Kingdom of Saudi Arabia"),
+        "entrance": MessageLookupByLibrary.simpleMessage("entrance"),
         "evaluations": MessageLookupByLibrary.simpleMessage("Evaluations"),
         "female": MessageLookupByLibrary.simpleMessage("Female"),
         "firstName": MessageLookupByLibrary.simpleMessage("First Name"),
@@ -93,6 +101,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "male": MessageLookupByLibrary.simpleMessage("Male"),
         "materials": MessageLookupByLibrary.simpleMessage("Materials"),
+        "mobilePhone": MessageLookupByLibrary.simpleMessage("Mobile phone"),
         "next": MessageLookupByLibrary.simpleMessage("Next"),
         "numberOfCourses":
             MessageLookupByLibrary.simpleMessage("Number of courses"),
@@ -134,14 +143,17 @@ class MessageLookup extends MessageLookupByLibrary {
         "teacher": MessageLookupByLibrary.simpleMessage("Teacher"),
         "test": MessageLookupByLibrary.simpleMessage("Test"),
         "testDuration": MessageLookupByLibrary.simpleMessage("Test Duration"),
+        "tests": MessageLookupByLibrary.simpleMessage("Tests"),
         "theAppointment":
             MessageLookupByLibrary.simpleMessage("The Appointment"),
         "theLectures": MessageLookupByLibrary.simpleMessage("The Lectures"),
+        "theLesson": MessageLookupByLibrary.simpleMessage("The Lesson"),
         "theLine": MessageLookupByLibrary.simpleMessage("the line"),
         "theLogin": MessageLookupByLibrary.simpleMessage("The Login"),
         "thePrevious": MessageLookupByLibrary.simpleMessage("The Previous"),
         "theStudent": MessageLookupByLibrary.simpleMessage("The Student"),
         "theStudents": MessageLookupByLibrary.simpleMessage("The Students"),
+        "theoretical": MessageLookupByLibrary.simpleMessage("Theoretical"),
         "thirdSecondary":
             MessageLookupByLibrary.simpleMessage("Third Secondary"),
         "thursday": MessageLookupByLibrary.simpleMessage("Thursday"),

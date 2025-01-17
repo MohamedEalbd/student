@@ -27,6 +27,7 @@ class ProfileScreen extends StatelessWidget {
                 children: [
                   SizedBox(height: 16.h),
                   CustomCardDialog(
+                    isProfile: true,
                     child: SingleChildScrollView(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,

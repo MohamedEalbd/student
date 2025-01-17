@@ -3,9 +3,11 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:student/core/functions/translate.dart';
+import 'package:student/core/routes/routes.dart';
 import 'package:student/features/courses/cubit/courses_cubit.dart';
 import 'package:student/features/profile/widgets/details/custom_my_card_capabilities.dart';
 import 'package:student/features/profile/widgets/details/select_title_to_details.dart';
+import 'package:student/shared/extentions/navigations.dart';
 import 'package:student/shared/resources/color_resources.dart';
 import 'package:student/shared/resources/icons_resources.dart';
 import 'package:student/shared/widgets/custom_container_display_students_or_degree.dart';
@@ -54,6 +56,9 @@ class CoursesScreen extends StatelessWidget {
                       return GestureDetector(
                         onTap: () {
                           CoursesCubit.instance.selectDay1(index);
+                          if (CoursesCubit.instance.currentDay1 == 0) {
+                            context.pushNamed(Routes.abilitiesCourse);
+                          }
                         },
                         child: CustomMyCardCapabilities(
                           isCourse: true,
@@ -76,7 +81,8 @@ class CoursesScreen extends StatelessWidget {
                 if (CoursesCubit.instance.currentIndex == 1)
                   ListView.separated(
                     shrinkWrap: true,
-                    itemCount: CoursesCubit.instance.listOfCoursesComplete.length,
+                    itemCount:
+                        CoursesCubit.instance.listOfCoursesComplete.length,
                     itemBuilder: (_, index) {
                       return GestureDetector(
                         onTap: () {
@@ -87,7 +93,8 @@ class CoursesScreen extends StatelessWidget {
                           isGradient: CoursesCubit.instance.currentDay2 == index
                               ? true
                               : false,
-                          title: CoursesCubit.instance.listOfCoursesComplete[index],
+                          title: CoursesCubit
+                              .instance.listOfCoursesComplete[index],
                           course: '4 ${tr.lesson}',
                           hour: tr.hour,
                           duration: tr.duration,

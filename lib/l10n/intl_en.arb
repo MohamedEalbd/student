@@ -101,6 +101,16 @@
     "numberOfCourses":"Number of courses",
     "completeTheSubscriptionProcess":"Complete the subscription process",
     "edit":"Edit",
-    "completedCourses":"Completed Courses"
+    "completedCourses":"Completed Courses",
+    "abilitiesCourse":"Abilities Course",
+    "details":"Details",
+    "days":"Days",
+    "tests":"Tests",
+    "allowedDevices":"Allowed Devices",
+    "mobilePhone":"Mobile phone",
+    "entrance":"entrance",
+    "close":"Close",
+    "theLesson":"The Lesson",
+    "theoretical":"Theoretical"
 
 }

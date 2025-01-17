@@ -9,19 +9,30 @@ class CustomCardDialog extends StatelessWidget {
     this.child,
     this.isProfile = false,
     this.isDisplayCourse = false,
-    this.height,
+    this.isHeight = false,
   });
   final Widget? child;
   final bool isProfile;
   final bool isDisplayCourse;
-  final double? height;
+  final bool isHeight;
   @override
   Widget build(BuildContext context) {
     ResponsiveScreen.initialize();
     return Container(
-      height: isProfile ? height : 500.h,
+      height: isProfile
+          ? 500.h
+          : isHeight
+              ? 230.h
+              : null,
       width: 345.w,
-      padding: EdgeInsets.only(bottom: 30.h),
+      padding: isDisplayCourse
+          ? EdgeInsets.only(
+              left: 16.w,
+              right: 16.w,
+              top: 16.h,
+              bottom: 16.h,
+            )
+          :isProfile? EdgeInsets.only(bottom: 30.h):null,
       decoration: BoxDecoration(
         color: ColorResources.whiteColor,
         boxShadow: [

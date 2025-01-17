@@ -9,9 +9,21 @@ class CustomLinerPercentIndicator extends StatelessWidget {
     super.key,
     this.isProfile = false,
     required this.percent,
+    this.center,
+    this.width,
+    this.lineHeight = 6,
+    this.backgroundColor,
+    this.progressColor,
+    this.barRadius,
   });
   final bool isProfile;
   final double percent;
+  final Widget? center;
+  final double? width;
+  final double lineHeight;
+  final Color? backgroundColor;
+  final Color? progressColor;
+  final Radius? barRadius;
 
   @override
   Widget build(BuildContext context) {
@@ -20,16 +32,20 @@ class CustomLinerPercentIndicator extends StatelessWidget {
       child: LinearPercentIndicator(
         animation: true,
         animationDuration: 1200,
-        width: 270.w,
-        lineHeight: 6.h,
-        barRadius: Radius.circular(5.r),
+        width: width,
+        lineHeight: lineHeight,
+        barRadius: barRadius == null ? Radius.circular(5.r) : barRadius,
         linearStrokeCap: LinearStrokeCap.roundAll,
         percent: percent,
         isRTL: true,
+        center: center,
         backgroundColor: isProfile
             ? ColorResources.greenColor.withOpacity(0.05)
-            : Colors.grey.shade400,
-        progressColor: ColorResources.greenColor,
+            : backgroundColor == null
+                ? Colors.grey.shade400
+                : backgroundColor,
+        progressColor:
+            progressColor == null ? ColorResources.greenColor : progressColor,
       ),
     );
   }

@@ -32,4 +32,7 @@ class IconsResources {
   static const correct = "$_Icons_Path/correct.svg";
   static const wrong = "$_Icons_Path/wrong.svg";
   static const delete = "$_Icons_Path/delete.svg";
+  static const tests = "$_Icons_Path/tests.svg";
+  static const device = "$_Icons_Path/device.svg";
+  static const video = "$_Icons_Path/video.svg";
 }
