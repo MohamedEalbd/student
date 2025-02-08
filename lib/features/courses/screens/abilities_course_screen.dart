@@ -20,7 +20,11 @@ import 'package:student/shared/widgets/custom_container_display_students_or_degr
 import 'package:student/shared/widgets/liner_precent_indecator.dart';
 
 class AbilitiesCourseScreen extends StatelessWidget {
-  const AbilitiesCourseScreen({super.key});
+  const AbilitiesCourseScreen({
+    super.key,
+    this.isAbilities = false,
+  });
+  final bool isAbilities;
 
   @override
   Widget build(BuildContext context) {
@@ -197,7 +201,9 @@ class AbilitiesCourseScreen extends StatelessWidget {
                             flex: 1,
                             child: ListView.separated(
                               itemBuilder: (context, index) {
-                                return Lecturers(model: CoursesCubit.instance.lecturers[index]);
+                                return Lecturers(
+                                    model:
+                                        CoursesCubit.instance.lecturers[index]);
                               },
                               separatorBuilder: (context, index) => SizedBox(
                                 height: 8.h,
@@ -210,7 +216,8 @@ class AbilitiesCourseScreen extends StatelessWidget {
                             flex: 1,
                             child: ListView.separated(
                               itemBuilder: (context, index) {
-                                return Lecturers(model: CoursesCubit.instance.test[index]);
+                                return Lecturers(
+                                    model: CoursesCubit.instance.test[index]);
                               },
                               separatorBuilder: (context, index) => SizedBox(
                                 height: 8.h,

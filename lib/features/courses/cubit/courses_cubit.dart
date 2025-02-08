@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:meta/meta.dart';
 import 'package:student/core/functions/translate.dart';
 import 'package:student/features/courses/models/lecturers_model.dart';
-import 'package:student/features/lecturers/models/lecturers_model.dart';
 import 'package:student/my_app.dart';
 import 'package:student/shared/resources/icons_resources.dart';
 

@@ -1,10 +1,3 @@
-
-
-
-
-
-import '../links/api_keys.dart';
-
 class ErrorModel {
   final int status;
   final String errorMessage;
@@ -13,8 +6,8 @@ class ErrorModel {
 
   factory ErrorModel.fromJson(Map<String, dynamic> json) {
     return ErrorModel(
-      status: json[ApiKeys.status],
-      errorMessage: json[ApiKeys.errorMessage],
+      status: json['status'],
+      errorMessage: json['errorMessage'],
     );
   }
 }

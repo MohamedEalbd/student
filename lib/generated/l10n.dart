@@ -18,17 +18,20 @@ class S {
   static S? _current;
 
   static S get current {
-    assert(_current != null,
-        'No instance of S was loaded. Try to initialize the S delegate before accessing S.current.');
+    assert(
+      _current != null,
+      'No instance of S was loaded. Try to initialize the S delegate before accessing S.current.',
+    );
     return _current!;
   }
 
   static const AppLocalizationDelegate delegate = AppLocalizationDelegate();
 
   static Future<S> load(Locale locale) {
-    final name = (locale.countryCode?.isEmpty ?? false)
-        ? locale.languageCode
-        : locale.toString();
+    final name =
+        (locale.countryCode?.isEmpty ?? false)
+            ? locale.languageCode
+            : locale.toString();
     final localeName = Intl.canonicalizedLocale(name);
     return initializeMessages(localeName).then((_) {
       Intl.defaultLocale = localeName;
@@ -41,8 +44,10 @@ class S {
 
   static S of(BuildContext context) {
     final instance = S.maybeOf(context);
-    assert(instance != null,
-        'No instance of S present in the widget tree. Did you add S.delegate in localizationsDelegates?');
+    assert(
+      instance != null,
+      'No instance of S present in the widget tree. Did you add S.delegate in localizationsDelegates?',
+    );
     return instance!;
   }
 
@@ -52,72 +57,37 @@ class S {
 
   /// `Next`
   String get next {
-    return Intl.message(
-      'Next',
-      name: 'next',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Next', name: 'next', desc: '', args: []);
   }
 
   /// `Teacher`
   String get teacher {
-    return Intl.message(
-      'Teacher',
-      name: 'teacher',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Teacher', name: 'teacher', desc: '', args: []);
   }
 
   /// `Student`
   String get student {
-    return Intl.message(
-      'Student',
-      name: 'student',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Student', name: 'student', desc: '', args: []);
   }
 
   /// `Login`
   String get login {
-    return Intl.message(
-      'Login',
-      name: 'login',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Login', name: 'login', desc: '', args: []);
   }
 
   /// `The Login`
   String get theLogin {
-    return Intl.message(
-      'The Login',
-      name: 'theLogin',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('The Login', name: 'theLogin', desc: '', args: []);
   }
 
   /// `Email`
   String get email {
-    return Intl.message(
-      'Email',
-      name: 'email',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Email', name: 'email', desc: '', args: []);
   }
 
   /// `Password`
   String get password {
-    return Intl.message(
-      'Password',
-      name: 'password',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Password', name: 'password', desc: '', args: []);
   }
 
   /// `Forget Password`
@@ -132,12 +102,7 @@ class S {
 
   /// `Or`
   String get or {
-    return Intl.message(
-      'Or',
-      name: 'or',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Or', name: 'or', desc: '', args: []);
   }
 
   /// `Create Account`
@@ -172,12 +137,7 @@ class S {
 
   /// `Enter Name`
   String get enterName {
-    return Intl.message(
-      'Enter Name',
-      name: 'enterName',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Enter Name', name: 'enterName', desc: '', args: []);
   }
 
   /// `Enter Password`
@@ -212,62 +172,32 @@ class S {
 
   /// `Gender`
   String get gender {
-    return Intl.message(
-      'Gender',
-      name: 'gender',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Gender', name: 'gender', desc: '', args: []);
   }
 
   /// `Male`
   String get male {
-    return Intl.message(
-      'Male',
-      name: 'male',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Male', name: 'male', desc: '', args: []);
   }
 
   /// `Female`
   String get female {
-    return Intl.message(
-      'Female',
-      name: 'female',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Female', name: 'female', desc: '', args: []);
   }
 
   /// `Submit`
   String get submit {
-    return Intl.message(
-      'Submit',
-      name: 'submit',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Submit', name: 'submit', desc: '', args: []);
   }
 
   /// `Cancel`
   String get cancel {
-    return Intl.message(
-      'Cancel',
-      name: 'cancel',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Cancel', name: 'cancel', desc: '', args: []);
   }
 
   /// `First Name`
   String get firstName {
-    return Intl.message(
-      'First Name',
-      name: 'firstName',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('First Name', name: 'firstName', desc: '', args: []);
   }
 
   /// `Enter phone number`
@@ -302,12 +232,7 @@ class S {
 
   /// `High School`
   String get highSchool {
-    return Intl.message(
-      'High School',
-      name: 'highSchool',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('High School', name: 'highSchool', desc: '', args: []);
   }
 
   /// `Universities`
@@ -332,22 +257,12 @@ class S {
 
   /// `Lectures`
   String get lectures {
-    return Intl.message(
-      'Lectures',
-      name: 'lectures',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Lectures', name: 'lectures', desc: '', args: []);
   }
 
   /// `Achievement`
   String get achievement {
-    return Intl.message(
-      'Achievement',
-      name: 'achievement',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Achievement', name: 'achievement', desc: '', args: []);
   }
 
   /// `Add A New Course`
@@ -362,82 +277,42 @@ class S {
 
   /// `Hour`
   String get hour {
-    return Intl.message(
-      'Hour',
-      name: 'hour',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Hour', name: 'hour', desc: '', args: []);
   }
 
   /// `Home`
   String get home {
-    return Intl.message(
-      'Home',
-      name: 'home',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Home', name: 'home', desc: '', args: []);
   }
 
   /// `Books`
   String get books {
-    return Intl.message(
-      'Books',
-      name: 'books',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Books', name: 'books', desc: '', args: []);
   }
 
   /// `Cart`
   String get cart {
-    return Intl.message(
-      'Cart',
-      name: 'cart',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Cart', name: 'cart', desc: '', args: []);
   }
 
   /// `Profile`
   String get profile {
-    return Intl.message(
-      'Profile',
-      name: 'profile',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Profile', name: 'profile', desc: '', args: []);
   }
 
   /// `Settings`
   String get settings {
-    return Intl.message(
-      'Settings',
-      name: 'settings',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Settings', name: 'settings', desc: '', args: []);
   }
 
   /// `Statistics`
   String get statistics {
-    return Intl.message(
-      'Statistics',
-      name: 'statistics',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Statistics', name: 'statistics', desc: '', args: []);
   }
 
   /// `Students`
   String get students {
-    return Intl.message(
-      'Students',
-      name: 'students',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Students', name: 'students', desc: '', args: []);
   }
 
   /// `The Students`
@@ -462,12 +337,7 @@ class S {
 
   /// `Search`
   String get search {
-    return Intl.message(
-      'Search',
-      name: 'search',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Search', name: 'search', desc: '', args: []);
   }
 
   /// `Third Secondary`
@@ -482,22 +352,12 @@ class S {
 
   /// `Degrees`
   String get degrees {
-    return Intl.message(
-      'Degrees',
-      name: 'degrees',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Degrees', name: 'degrees', desc: '', args: []);
   }
 
   /// `the line`
   String get theLine {
-    return Intl.message(
-      'the line',
-      name: 'theLine',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('the line', name: 'theLine', desc: '', args: []);
   }
 
   /// `Devices Used`
@@ -512,72 +372,37 @@ class S {
 
   /// `Courses`
   String get courses {
-    return Intl.message(
-      'Courses',
-      name: 'courses',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Courses', name: 'courses', desc: '', args: []);
   }
 
   /// `Phone`
   String get phone {
-    return Intl.message(
-      'Phone',
-      name: 'phone',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Phone', name: 'phone', desc: '', args: []);
   }
 
   /// `Course`
   String get course {
-    return Intl.message(
-      'Course',
-      name: 'course',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Course', name: 'course', desc: '', args: []);
   }
 
   /// `Durations`
   String get duration {
-    return Intl.message(
-      'Durations',
-      name: 'duration',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Durations', name: 'duration', desc: '', args: []);
   }
 
   /// `Lesson`
   String get lesson {
-    return Intl.message(
-      'Lesson',
-      name: 'lesson',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Lesson', name: 'lesson', desc: '', args: []);
   }
 
   /// `Test`
   String get test {
-    return Intl.message(
-      'Test',
-      name: 'test',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Test', name: 'test', desc: '', args: []);
   }
 
   /// `Answers`
   String get answers {
-    return Intl.message(
-      'Answers',
-      name: 'answers',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Answers', name: 'answers', desc: '', args: []);
   }
 
   /// `About the teacher`
@@ -592,42 +417,22 @@ class S {
 
   /// `The Student`
   String get theStudent {
-    return Intl.message(
-      'The Student',
-      name: 'theStudent',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('The Student', name: 'theStudent', desc: '', args: []);
   }
 
   /// `Sunday`
   String get sunday {
-    return Intl.message(
-      'Sunday',
-      name: 'sunday',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Sunday', name: 'sunday', desc: '', args: []);
   }
 
   /// `Thursday`
   String get thursday {
-    return Intl.message(
-      'Thursday',
-      name: 'thursday',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Thursday', name: 'thursday', desc: '', args: []);
   }
 
   /// `Evaluations`
   String get evaluations {
-    return Intl.message(
-      'Evaluations',
-      name: 'evaluations',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Evaluations', name: 'evaluations', desc: '', args: []);
   }
 
   /// `A math teacher with more than ten years of experience and has taught more than 5000 students over ten years. He has more than five years of experience in teaching abilities.`
@@ -642,12 +447,7 @@ class S {
 
   /// `Description`
   String get description {
-    return Intl.message(
-      'Description',
-      name: 'description',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Description', name: 'description', desc: '', args: []);
   }
 
   /// `The Lectures`
@@ -672,22 +472,12 @@ class S {
 
   /// `Subscribers`
   String get subscribers {
-    return Intl.message(
-      'Subscribers',
-      name: 'subscribers',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Subscribers', name: 'subscribers', desc: '', args: []);
   }
 
   /// `Phone Users`
   String get phoneUsers {
-    return Intl.message(
-      'Phone Users',
-      name: 'phoneUsers',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Phone Users', name: 'phoneUsers', desc: '', args: []);
   }
 
   /// `Computer Users`
@@ -702,72 +492,37 @@ class S {
 
   /// `Completed`
   String get completed {
-    return Intl.message(
-      'Completed',
-      name: 'completed',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Completed', name: 'completed', desc: '', args: []);
   }
 
   /// `Remaining`
   String get remaining {
-    return Intl.message(
-      'Remaining',
-      name: 'remaining',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Remaining', name: 'remaining', desc: '', args: []);
   }
 
   /// `From`
   String get from {
-    return Intl.message(
-      'From',
-      name: 'from',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('From', name: 'from', desc: '', args: []);
   }
 
   /// `To`
   String get to {
-    return Intl.message(
-      'To',
-      name: 'to',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('To', name: 'to', desc: '', args: []);
   }
 
   /// `Weeks`
   String get weeks {
-    return Intl.message(
-      'Weeks',
-      name: 'weeks',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Weeks', name: 'weeks', desc: '', args: []);
   }
 
   /// `Week`
   String get week {
-    return Intl.message(
-      'Week',
-      name: 'week',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Week', name: 'week', desc: '', args: []);
   }
 
   /// `Of The Weeks`
   String get ofTheWeeks {
-    return Intl.message(
-      'Of The Weeks',
-      name: 'ofTheWeeks',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Of The Weeks', name: 'ofTheWeeks', desc: '', args: []);
   }
 
   /// `number Of Courses Sold`
@@ -812,22 +567,12 @@ class S {
 
   /// `Sales`
   String get sales {
-    return Intl.message(
-      'Sales',
-      name: 'sales',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Sales', name: 'sales', desc: '', args: []);
   }
 
   /// `Total Sales`
   String get totalSales {
-    return Intl.message(
-      'Total Sales',
-      name: 'totalSales',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Total Sales', name: 'totalSales', desc: '', args: []);
   }
 
   /// `Total Profit`
@@ -842,12 +587,7 @@ class S {
 
   /// `Question`
   String get question {
-    return Intl.message(
-      'Question',
-      name: 'question',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Question', name: 'question', desc: '', args: []);
   }
 
   /// `Enter course content`
@@ -912,12 +652,7 @@ class S {
 
   /// `Enter today`
   String get enterToday {
-    return Intl.message(
-      'Enter today',
-      name: 'enterToday',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Enter today', name: 'enterToday', desc: '', args: []);
   }
 
   /// `The Previous`
@@ -942,12 +677,7 @@ class S {
 
   /// `Time`
   String get time {
-    return Intl.message(
-      'Time',
-      name: 'time',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Time', name: 'time', desc: '', args: []);
   }
 
   /// `Test Duration`
@@ -1002,32 +732,17 @@ class S {
 
   /// `Complete`
   String get complete {
-    return Intl.message(
-      'Complete',
-      name: 'complete',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Complete', name: 'complete', desc: '', args: []);
   }
 
   /// `Lecturers`
   String get lecturers {
-    return Intl.message(
-      'Lecturers',
-      name: 'lecturers',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Lecturers', name: 'lecturers', desc: '', args: []);
   }
 
   /// `Materials`
   String get materials {
-    return Intl.message(
-      'Materials',
-      name: 'materials',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Materials', name: 'materials', desc: '', args: []);
   }
 
   /// `Enter the code`
@@ -1062,12 +777,7 @@ class S {
 
   /// `Edit`
   String get edit {
-    return Intl.message(
-      'Edit',
-      name: 'edit',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Edit', name: 'edit', desc: '', args: []);
   }
 
   /// `Completed Courses`
@@ -1092,32 +802,17 @@ class S {
 
   /// `Details`
   String get details {
-    return Intl.message(
-      'Details',
-      name: 'details',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Details', name: 'details', desc: '', args: []);
   }
 
   /// `Days`
   String get days {
-    return Intl.message(
-      'Days',
-      name: 'days',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Days', name: 'days', desc: '', args: []);
   }
 
   /// `Tests`
   String get tests {
-    return Intl.message(
-      'Tests',
-      name: 'tests',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Tests', name: 'tests', desc: '', args: []);
   }
 
   /// `Allowed Devices`
@@ -1142,42 +837,27 @@ class S {
 
   /// `entrance`
   String get entrance {
-    return Intl.message(
-      'entrance',
-      name: 'entrance',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('entrance', name: 'entrance', desc: '', args: []);
   }
 
   /// `Close`
   String get close {
-    return Intl.message(
-      'Close',
-      name: 'close',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Close', name: 'close', desc: '', args: []);
   }
 
   /// `The Lesson`
   String get theLesson {
-    return Intl.message(
-      'The Lesson',
-      name: 'theLesson',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('The Lesson', name: 'theLesson', desc: '', args: []);
   }
 
   /// `Theoretical`
   String get theoretical {
-    return Intl.message(
-      'Theoretical',
-      name: 'theoretical',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Theoretical', name: 'theoretical', desc: '', args: []);
+  }
+
+  /// `The Abilities`
+  String get abilities {
+    return Intl.message('The Abilities', name: 'abilities', desc: '', args: []);
   }
 }
 

@@ -29,7 +29,7 @@ class CustomContainerDisplayDegrees extends StatelessWidget {
               height: ProfileCubit.instance.displayAnswer == index &&
                       ProfileCubit.instance.isClickOnArrowDown
                   ? 556.h
-                  : 120.h,
+                  : 125.h,
               width: 310.w,
               padding: EdgeInsets.only(left: 16.w, right: 16.w, top: 16.h),
               decoration: BoxDecoration(
@@ -73,7 +73,7 @@ class CustomContainerDisplayDegrees extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        '100% من',
+                        '100% ${tr.from}',
                         style: AppTextStyle.textStyle(
                           appFontSize: 10.sp,
                           appFontHeight: 12.6.sp,

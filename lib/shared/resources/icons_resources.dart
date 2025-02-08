@@ -35,4 +35,5 @@ class IconsResources {
   static const tests = "$_Icons_Path/tests.svg";
   static const device = "$_Icons_Path/device.svg";
   static const video = "$_Icons_Path/video.svg";
+  static const myCart = "$_Icons_Path/my_cart.svg";
 }

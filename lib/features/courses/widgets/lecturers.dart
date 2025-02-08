@@ -1,9 +1,10 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:student/core/functions/translate.dart';
 import 'package:student/features/courses/models/lecturers_model.dart';
-import 'package:student/features/courses/widgets/custom_button_dailog.dart';
 import 'package:student/features/courses/widgets/custom_radio.dart';
 import 'package:student/features/courses/widgets/custom_row_live.dart';
 import 'package:student/shared/classes/text_style.dart';

@@ -1,9 +1,13 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
 class PrefServices {
+  PrefServices._();
+  static final PrefServices _instance = PrefServices._();
+  static PrefServices get instance => _instance;
+  factory PrefServices() => _instance;
   static SharedPreferences? sharedPreferences;
 
-  static init() async {
+  Future<void> init() async {
     sharedPreferences = await SharedPreferences.getInstance();
   }
 
@@ -21,7 +25,7 @@ class PrefServices {
   }
 
   static dynamic getData({required String key}) {
-    return  sharedPreferences!.get(key);
+    return sharedPreferences!.get(key);
   }
 
   static bool containKey({required String key}) {

@@ -8,3 +8,4 @@ abstract class CartState extends Equatable {
 }
 
 class CartInitial extends CartState {}
+class Complete extends CartState {}

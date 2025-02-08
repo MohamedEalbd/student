@@ -1,3 +1,4 @@
+
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -11,6 +12,13 @@ class CartCubit extends Cubit<CartState> {
 
   static final CartCubit _cartCubit = BlocProvider.of(navigatorKey.currentContext!);
   static CartCubit get instance => _cartCubit; 
+
+  bool isComplete = false;
+
+  void complete(){
+    isComplete = true;
+    emit(Complete());
+  }
 
   List  words =[
     tr.capabilities,

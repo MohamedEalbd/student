@@ -4,9 +4,11 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:student/core/classes/responsive_screen.dart';
 import 'package:student/core/functions/check_for_current_language.dart';
 import 'package:student/core/functions/translate.dart';
+import 'package:student/core/routes/routes.dart';
 import 'package:student/features/home/cubit/home_cubit.dart';
 import 'package:student/features/home/widgets/custom_list_horizontal.dart';
 import 'package:student/shared/classes/text_style.dart';
+import 'package:student/shared/extentions/navigations.dart';
 import 'package:student/shared/resources/color_resources.dart';
 import 'package:student/shared/widgets/display_courses.dart';
 
@@ -78,6 +80,12 @@ class HomeScreen extends StatelessWidget {
                   child: ListView.separated(
                     itemBuilder: (_, index) {
                       return DisplayCourses(
+                        onTap: (){
+                          HomeCubit.instance.currentIndex=index;
+                          if(HomeCubit.instance.currentIndex==0){
+                            context.pushNamed(Routes.abilitiesScreen);
+                          }else{}
+                        },
                         courses: HomeCubit.instance.courses[index],
                       );
                     },

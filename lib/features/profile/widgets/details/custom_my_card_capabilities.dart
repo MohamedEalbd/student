@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -117,7 +119,6 @@ class CustomMyCardCapabilities extends StatelessWidget {
                       children: [
                         Text(
                           title,
-                          // textAlign: TextAlign.center,
                           style: AppTextStyle.textStyle(
                             appFontSize: 18.sp,
                             appFontHeight: 22.68.sp,
@@ -129,7 +130,6 @@ class CustomMyCardCapabilities extends StatelessWidget {
                         ),
                         Text(
                           course,
-                          // textAlign: TextAlign.center,
                           style: AppTextStyle.textStyle(
                             appFontSize: 14.sp,
                             appFontHeight: 17.64.sp,
@@ -141,7 +141,6 @@ class CustomMyCardCapabilities extends StatelessWidget {
                         ),
                         Text(
                           hour,
-                          // textAlign: TextAlign.center,
                           style: AppTextStyle.textStyle(
                             appFontSize: 14.sp,
                             appFontHeight: 17.64.sp,
@@ -170,7 +169,6 @@ class CustomMyCardCapabilities extends StatelessWidget {
                 SizedBox(width: 8.w),
                 Text(
                   duration,
-                  // textAlign: TextAlign.center,
                   style: AppTextStyle.textStyle(
                     appFontSize: 14.sp,
                     appFontHeight: 16.94.sp,
